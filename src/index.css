@@ -1,13 +1,68 @@
-body {
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap");
+* {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+/* HEADER CSS STARTS HERE */
+#header {
+  display: flex;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
+    rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+}
+.web_logo {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  font-size: 28px;
+  padding: 15px;
+}
+.nav-items {
+  display: flex;
+  justify-content: flex-end;
+  list-style: none;
+  margin-top: 18px;
+}
+.navlinks {
+  font-size: 1.2rem;
+  margin-right: 58px;
+  text-decoration: none;
+  color: #000;
+}
+#sidebar a.active {
+  position: relative;
+  font-size: 1.1em;
+  color: #e0c350;
+  text-decoration: none;
+  padding: 6px 20px;
+}
+#sidebar a.active:hover {
+  color: #e0c350;
+}
+#sidebar a.active span {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  border-bottom: 2px solid #e0c350;
+  border-radius: 15px;
+  transform: scale(0) translateY(50px);
+  opacity: 0;
+  transition: 0.5s;
+}
+#sidebar a.active:hover span {
+  transform: scale(1) translateY(0);
+  opacity: 1;
+}
+#sidebar a:hover {
+  color: #e0c350;
+}
+/* HEADERS CSS END HERE */
+footer {
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
+    rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
 }
