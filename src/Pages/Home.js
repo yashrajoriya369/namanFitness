@@ -17,7 +17,9 @@ const Home = () => {
           <button className="enrol_btn mb-5">ENROL NOW</button>
         </div>
       </section>
-      <section></section>
+      <section>
+        <div className="second_banner_slogan">WHAT IS INCLUDED IN COACHING?</div>
+      </section>
       <section></section>
       <section></section>
     </>

@@ -24,7 +24,7 @@ const Footer = () => {
                   aria-label="Your Email Address"
                   aria-describedby="basic-addon2"
                 />
-                <button className="input-group-text p-2  w-25" id="basic-addon2">
+                <button className="input-group-text p-2 w-25" id="basic-addon2">
                   Subscribe
                 </button>
               </div>
