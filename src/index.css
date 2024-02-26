@@ -75,6 +75,24 @@
 .navbar a:hover {
   color: #117964;
 }
+.blog_btn {
+  background-color: #e1dcc8;
+  box-shadow: rgba(45, 35, 66, 0.4) 0 2px 4px,
+    rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #b7b2a2 0 -3px 0 inset;
+    transition: box-shadow 0.15s, transform 0.15s;
+}
+
+.blog_btn:focus {
+box-shadow: #d6d6e7 0 0 0 1.5px inset, rgba(45, 35, 66, 0.4) 0 2px 4px,
+  rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #d6d6e7 0 -3px 0 inset;
+}
+
+.blog_btn:hover {
+box-shadow: rgba(45, 35, 66, 0.4) 0 4px 8px,
+  rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #d6d6e7 0 -3px 0 inset;
+transform: translateY(-2px);
+}
+
 @media (max-width: 768px) {
   .navbar {
     opacity: 1;
@@ -324,6 +342,20 @@
     font-size: 18px !important;
     margin-left: 40px !important;
   }
+  .blog_img{
+    display: flex !important;
+    padding: 10px !important;
+    margin: 10px 0px !important;
+    flex-direction: column !important;
+  }
+  .blog_img img {
+    width: 90% !important;
+    margin: 10px !important;
+    border-radius: 0 !important;
+  }
+  .blog_img .card-body{
+    width: 100%  !important;
+  }
 }
 
 /* HEADER CSS END HERE */
@@ -388,6 +420,7 @@
   box-shadow: #d6d6e7 0 3px 7px inset;
   transform: translateY(2px);
 }
+
 .second_banner_slogan{
   font-size: 32px;
   background-color: #000;
