@@ -27,16 +27,16 @@ const Home = () => {
         <div className="container">
           <div className="row my-5">
             <div className="col-sm-6">
-              <Blog />
+              <Blog
+                title="DETAILED PERSONALISED NUTRITION"
+                text="A straightforward Indian-style diet plan that is adapted to your preferred eating pattern (vegetarian, non-vegetarian, or vegan). You will also have access to my cookbook, which has more than 40 delicious and incredibly simple recipes."
+              />
             </div>
             <div className="col-sm-6">
-              <Blog />
+              <Blog title="INDIVIDUAL TRAINING PROGRAMS" text="Each Program is designed to meet individual needs, taking into account fitness goals, activity levels and any physical limitations. Preference is given to exercises that make training fun and sustainable for you. No two clients will have the same program." />
             </div>
             <div className="col-sm-6">
-              <Blog />
-            </div>
-            <div className="col-sm-6">
-              <Blog />
+              <Blog title="STEP BY STEP TECHNIQUE ANALYSIS" text="Small technical adjustments are made to individualise your technique. Remember there is no textbook 'perfect' form, we are all built slightly differently, have different goals & different gym equipments." />
             </div>
           </div>
         </div>

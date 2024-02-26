@@ -1,8 +1,10 @@
 import React from "react";
 import Saket from "./saketgokhale.jpg";
 import { Link } from "react-router-dom";
+import "../index.css";
 
-const Blog = () => {
+const Blog = (props) => {
+  const  {title, text} = props;
   return (
     <>
       <div
@@ -18,10 +20,9 @@ const Blog = () => {
           alt="saketgokhale"
         />
         <div className="card-body w-25">
-          <h5 className="card-title">Card title</h5>
-          <p className="card-text">
-            Some quick example text to build on the card title and make up the
-            bulk of the card's content.
+          <h5 className="card-title text-center mb-4">{title}</h5>
+          <p className="card-text mb-5">
+            {text}
           </p>
           <Link to="blogs" className="blog_btn btn w-100">
             Read More
