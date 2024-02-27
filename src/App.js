@@ -13,6 +13,7 @@ import TermsConditions from "./Pages/TermsConditions";
 import Blogs from "./Pages/Blogs";
 import AboutUs from "./Pages/AboutUs";
 import Contact from "./Pages/Contact";
+import SingleBlog from "./Pages/SingleBlog";
 
 function App() {
   return (
@@ -30,6 +31,7 @@ function App() {
             <Route path="shipping-policy" element={<ShippingPolicy />} />
             <Route path="terms-and-conditions" element={<TermsConditions />} />
             <Route path="blogs" element={<Blogs />} />
+            <Route path="blogs/:id" element={<SingleBlog />} />
             <Route path="aboutus" element={<AboutUs />} />
             <Route path="contact" element={<Contact />} />
           </Route>

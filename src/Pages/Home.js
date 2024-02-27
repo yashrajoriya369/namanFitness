@@ -1,6 +1,8 @@
 import React from "react";
 import { AiFillMessage } from "react-icons/ai";
+import { Link } from "react-router-dom";
 import Blog from "../components/Blog";
+import "../App.css";
 
 const Home = () => {
   return (
@@ -17,31 +19,39 @@ const Home = () => {
           GET INTO THE BEST SHAPE OF YOUR LIFE
         </div>
         <div className="mt-3 text-center">
-          <button className="enrol_btn mb-5">ENROL NOW</button>
+          <Link className="animated-button3 mb-5">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            ENROL NOW
+          </Link>
         </div>
       </section>
       <section>
         <div className="second_banner_slogan">
           WHAT IS INCLUDED IN COACHING?
         </div>
-        <div className="container">
-          <div className="row my-5">
-            <div className="col-sm-6">
-              <Blog
-                title="DETAILED PERSONALISED NUTRITION"
-                text="A straightforward Indian-style diet plan that is adapted to your preferred eating pattern (vegetarian, non-vegetarian, or vegan). You will also have access to my cookbook, which has more than 40 delicious and incredibly simple recipes."
-              />
-            </div>
-            <div className="col-sm-6">
-              <Blog title="INDIVIDUAL TRAINING PROGRAMS" text="Each Program is designed to meet individual needs, taking into account fitness goals, activity levels and any physical limitations. Preference is given to exercises that make training fun and sustainable for you. No two clients will have the same program." />
-            </div>
-            <div className="col-sm-6">
-              <Blog title="STEP BY STEP TECHNIQUE ANALYSIS" text="Small technical adjustments are made to individualise your technique. Remember there is no textbook 'perfect' form, we are all built slightly differently, have different goals & different gym equipments." />
-            </div>
-          </div>
+        <div>
+          <Blog
+            title="DETAILED PERSONALISED NUTRITION"
+            text="A straightforward Indian-style diet plan that is adapted to your preferred eating pattern (vegetarian, non-vegetarian, or vegan). You will also have access to my cookbook, which has more than 40 delicious and incredibly simple recipes."
+          />
+        </div>
+        <div className="mt-3 text-center">
+          <Link className="animated-button3 mb-5">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            ENROL NOW
+          </Link>
         </div>
       </section>
-      <section></section>
+      <section className="third-banner">
+        <div className="text-center fs-1 text-uppercase fw-bold bg-dark text-white my-5" style={{width: "60%", margin: "auto"}}>Client Transformation</div>
+        <div></div>
+      </section>
       <section></section>
     </>
   );
