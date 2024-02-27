@@ -39,7 +39,7 @@ const Home = () => {
       </section>
 
       <section className="">
-        <div className="second_banner_slogan fs-3">
+        <div className="second_banner_slogan fs-3 w-50 m-auto">
           WHAT IS INCLUDED IN COACHING?
         </div>
         <div>
