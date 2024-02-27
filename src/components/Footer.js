@@ -2,6 +2,8 @@ import React from "react";
 import { Link } from "react-router-dom";
 import { BsLinkedin, BsGithub, BsYoutube, BsInstagram } from "react-icons/bs";
 import { PiTelegramLogo } from "react-icons/pi";
+import "../App.css";
+import "../index.css";
 
 const Footer = () => {
   return (
@@ -11,7 +13,7 @@ const Footer = () => {
           <div>
             <div>
               <div className="d-flex justify-content-center">
-              <PiTelegramLogo  className="fs-1 text-white"/>
+                <PiTelegramLogo className="fs-1 text-white" />
                 <h2 className="text-white">Sign Up for Newsletter</h2>
               </div>
             </div>
@@ -34,13 +36,14 @@ const Footer = () => {
       </footer>
 
       <footer className="py-4">
-        <div className="container-xxl">
-          <div className="column">
-            <div className="col-8">
+        <div>
+          <div className="d-flex justify-content-around footer">
+            <div>
               <h4 className="text-dark mb-4">Contact Us</h4>
               <div>
                 <address className="text-dark fs-6">
-                  Hno : 277 Near Sahyog Nagar, <br /> Bharatpur, Rajasthan <br />
+                  Hno : 277 Near Sahyog Nagar, <br /> Bharatpur, Rajasthan{" "}
+                  <br />
                   PinCode: 321001
                 </address>
                 <a
@@ -71,16 +74,25 @@ const Footer = () => {
                 </div>
               </div>
             </div>
-            <div className="col-6">
-              <h4 className="text-dark mb-2 mt-5">Information</h4>
+            <div>
+              <h4 className="text-dark mb-4">Information</h4>
               <div className="footer-links d-flex flex-column">
-                <Link to="/privacy-policy" className="text-dark py-2 text-decoration-none">
+                <Link
+                  to="/privacy-policy"
+                  className="text-dark py-2 text-decoration-none"
+                >
                   Privacy Policy
                 </Link>
-                <Link to="/refund-policy" className="text-dark py-2 text-decoration-none">
+                <Link
+                  to="/refund-policy"
+                  className="text-dark py-2 text-decoration-none"
+                >
                   Refund Policy
                 </Link>
-                <Link to="/shipping-policy" className="text-dark py-2 text-decoration-none">
+                <Link
+                  to="/shipping-policy"
+                  className="text-dark py-2 text-decoration-none"
+                >
                   Shipping Policy
                 </Link>
                 <Link
@@ -89,16 +101,27 @@ const Footer = () => {
                 >
                   Terms & Conditions
                 </Link>
-                <Link to="/blogs" className="text-dark py-2 text-decoration-none">
+                <Link
+                  to="/blogs"
+                  className="text-dark py-2 text-decoration-none"
+                >
                   Blogs
                 </Link>
               </div>
             </div>
-            <div className="col-3">
-              <h4 className="text-dark mt-5">Account</h4>
+            <div>
+              <h4 className="text-dark mb-4">Account</h4>
               <div className="footer-links d-flex flex-column">
-                <Link to="/aboutus" className="text-dark py-2 text-decoration-none">About Us</Link>
-                <Link to="/contact" className="text-dark py-2 text-decoration-none">
+                <Link
+                  to="/aboutus"
+                  className="text-dark py-2 text-decoration-none"
+                >
+                  About Us
+                </Link>
+                <Link
+                  to="/contact"
+                  className="text-dark py-2 text-decoration-none"
+                >
                   Contact
                 </Link>
               </div>

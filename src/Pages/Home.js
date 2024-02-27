@@ -66,7 +66,6 @@ const Home = () => {
         >
           Client Transformation
         </div>
-        <div></div>
       </section>
 
       <section className="client-transformation">
