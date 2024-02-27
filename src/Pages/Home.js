@@ -62,7 +62,7 @@ const Home = () => {
       <section className="third-banner">
         <div
           className="text-center fs-1 text-uppercase fw-bold bg-dark text-white my-5"
-          style={{ width: "35%", margin: "auto" }}
+          style={{ width: "40%", margin: "auto" }}
         >
           Client Transformation
         </div>
