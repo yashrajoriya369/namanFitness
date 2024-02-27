@@ -3,6 +3,7 @@ import { AiFillMessage } from "react-icons/ai";
 import { Link } from "react-router-dom";
 import Blog from "../components/Blog";
 import "../App.css";
+import "../index.css";
 import Marquee from "react-fast-marquee";
 import First from "../images/1.webp";
 import Second from "../images/2.webp";
@@ -37,7 +38,7 @@ const Home = () => {
         </div>
       </section>
 
-      <section>
+      <section className="">
         <div className="second_banner_slogan">
           WHAT IS INCLUDED IN COACHING?
         </div>
@@ -61,7 +62,7 @@ const Home = () => {
       <section className="third-banner">
         <div
           className="text-center fs-1 text-uppercase fw-bold bg-dark text-white my-5"
-          style={{ width: "60%", margin: "auto" }}
+          style={{ width: "35%", margin: "auto" }}
         >
           Client Transformation
         </div>
@@ -69,42 +70,42 @@ const Home = () => {
       </section>
 
       <section className="client-transformation">
-        <div class="container row ">
-          <div class="card col-sm-4 me-5">
-            <div class="card-header">
+        <div className="container row ">
+          <div className="card col-sm-4 me-5">
+            <div className="card-header">
               <img
                 src="https://s.aolcdn.com/images/dims?client=fh7w6q744eiognjk&signature=d59d0cf6af1d779a3dca451e0ba259c33bbc6115&image_uri=https%3A%2F%2Fs.aolcdn.com%2Fos%2Fab%2F_cms%2F2019%2F08%2F30142658%2F2020-jeep-wrangler-16.jpg&thumbnail=750%2C422&quality=80"
                 alt=""
               />
             </div>
-            <div class="card-body">
-              <span class="tag tag-teal">Technology</span>
+            <div className="card-body">
+              <span className="tag tag-teal">Technology</span>
               <h4>Why is the Tesla Cybertruck designed the way it is?</h4>
               <p>
                 Lorem ipsum, dolor sit amet consectetur adipisicing elit.
                 Aspernatur tenetur distinctio neque?
               </p>
-              <div class="user">
+              <div className="user">
                 <img
                   src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcSft5PLhaSb6QUdT0yRu3rjlam1Rt--WDJ6yQ&usqp=CAU"
                   alt=""
                 />
-                <div class="user-info">
+                <div className="user-info">
                   <h5>Lewis Daniels</h5>
                   <small>Yesterday</small>
                 </div>
               </div>
             </div>
           </div>
-          <div class="card col-sm-4 me-5">
-            <div class="card-header">
+          <div className="card col-sm-4 me-5">
+            <div className="card-header">
               <img
                 src="https://images.cruisecritic.com/image/18740535/10-best-cruise-destinations-for-hot-air-balloon-rides_600x400_21.jpg"
                 alt=""
               />
             </div>
-            <div class="card-body">
-              <span class="tag tag-purple">Place</span>
+            <div className="card-body">
+              <span className="tag tag-purple">Place</span>
               <h4>
                 Hot Air Ballooning in Nepal - 1 Day - Nepal Mother House Treks
               </h4>
@@ -113,27 +114,27 @@ const Home = () => {
                 dolor nihil saepe. Nobis nihil minus similique hic quas
                 mollitia. Error.
               </p>
-              <div class="user">
+              <div className="user">
                 <img
                   src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcSft5PLhaSb6QUdT0yRu3rjlam1Rt--WDJ6yQ&usqp=CAU"
                   alt=""
                 />
-                <div class="user-info">
+                <div className="user-info">
                   <h5>Lewis Daniels</h5>
                   <small>Yesterday</small>
                 </div>
               </div>
             </div>
           </div>
-          <div class="card col-sm-4 me-5">
-            <div class="card-header">
+          <div className="card col-sm-4 me-5">
+            <div className="card-header">
               <img
                 src="https://dynaimage.cdn.cnn.com/cnn/q_auto,w_412,c_fill,g_auto,h_232,ar_16:9/http%3A%2F%2Fcdn.cnn.com%2Fcnnnext%2Fdam%2Fassets%2F200305114843-01-edge-hudson-yards-observation-deck.jpg"
                 alt=""
               />
             </div>
-            <div class="card-body">
-              <span class="tag tag-pink">Travel</span>
+            <div className="card-body">
+              <span className="tag tag-pink">Travel</span>
               <h4>
                 New York City | Layout, People, Economy, Culture, & History
               </h4>
@@ -141,12 +142,12 @@ const Home = () => {
                 Lorem ipsum dolor sit amet consectetur adipisicing elit.
                 Molestias consequuntur sequi suscipit iure fuga ea!
               </p>
-              <div class="user">
+              <div className="user">
                 <img
                   src="https://3.bp.blogspot.com/--sCpJJGYWEA/W2P4C51CYSI/AAAAAAAAQcI/LR4U_--Wf1E3wz7RLZtmwBPObm_ky9tQQCLcBGAs/s1600/beautiful-indian-women-photos-1.jpg"
                   alt=""
                 />
-                <div class="user-info">
+                <div className="user-info">
                   <h5>Carrie Brewer</h5>
                   <small>23 Dec 2020</small>
                 </div>
@@ -307,11 +308,11 @@ const Home = () => {
       </section>
 
       <section className="asked-questions">
-        <div class="accordion" id="accordionExample">
-          <div class="accordion-item">
-            <h2 class="accordion-header">
+        <div className="accordion" id="accordionExample">
+          <div className="accordion-item">
+            <h2 className="accordion-header">
               <button
-                class="accordion-button"
+                className="accordion-button"
                 type="button"
                 data-bs-toggle="collapse"
                 data-bs-target="#collapseOne"
@@ -323,10 +324,10 @@ const Home = () => {
             </h2>
             <div
               id="collapseOne"
-              class="accordion-collapse collapse show"
+              className="accordion-collapse collapse show"
               data-bs-parent="#accordionExample"
             >
-              <div class="accordion-body">
+              <div className="accordion-body">
                 <p>
                   No. I believe that anybody who visits my website wants direct
                   communication with me. If you sign up for the online coaching
@@ -335,10 +336,10 @@ const Home = () => {
               </div>
             </div>
           </div>
-          <div class="accordion-item">
-            <h2 class="accordion-header">
+          <div className="accordion-item">
+            <h2 className="accordion-header">
               <button
-                class="accordion-button collapsed"
+                className="accordion-button collapsed"
                 type="button"
                 data-bs-toggle="collapse"
                 data-bs-target="#collapseTwo"
@@ -350,10 +351,10 @@ const Home = () => {
             </h2>
             <div
               id="collapseTwo"
-              class="accordion-collapse collapse"
+              className="accordion-collapse collapse"
               data-bs-parent="#accordionExample"
             >
-              <div class="accordion-body">
+              <div className="accordion-body">
                 <p>
                   Although I do recommend on having access to a gym, it is not
                   absolutely necessary. There might be multiple reasons one
@@ -363,10 +364,10 @@ const Home = () => {
               </div>
             </div>
           </div>
-          <div class="accordion-item">
-            <h2 class="accordion-header">
+          <div className="accordion-item">
+            <h2 className="accordion-header">
               <button
-                class="accordion-button collapsed"
+                className="accordion-button collapsed"
                 type="button"
                 data-bs-toggle="collapse"
                 data-bs-target="#collapseThree"
@@ -378,10 +379,10 @@ const Home = () => {
             </h2>
             <div
               id="collapseThree"
-              class="accordion-collapse collapse"
+              className="accordion-collapse collapse"
               data-bs-parent="#accordionExample"
             >
-              <div class="accordion-body">
+              <div className="accordion-body">
                 <p>
                   Supplements can have benefits if used well but you also don't
                   need to take supplements to get good results. Although I do
@@ -392,10 +393,10 @@ const Home = () => {
               </div>
             </div>
           </div>
-          <div class="accordion-item">
-            <h2 class="accordion-header">
+          <div className="accordion-item">
+            <h2 className="accordion-header">
               <button
-                class="accordion-button collapsed"
+                className="accordion-button collapsed"
                 type="button"
                 data-bs-toggle="collapse"
                 data-bs-target="#collapseThree"
@@ -407,10 +408,10 @@ const Home = () => {
             </h2>
             <div
               id="collapseThree"
-              class="accordion-collapse collapse"
+              className="accordion-collapse collapse"
               data-bs-parent="#accordionExample"
             >
-              <div class="accordion-body">
+              <div className="accordion-body">
                 <p>
                   Lets get this question out of the way. I am no magician. The
                   first few days/weeks will be very introductory to help me
@@ -424,10 +425,10 @@ const Home = () => {
               </div>
             </div>
           </div>
-          <div class="accordion-item">
-            <h2 class="accordion-header">
+          <div className="accordion-item">
+            <h2 className="accordion-header">
               <button
-                class="accordion-button collapsed"
+                className="accordion-button collapsed"
                 type="button"
                 data-bs-toggle="collapse"
                 data-bs-target="#collapseThree"
@@ -439,10 +440,10 @@ const Home = () => {
             </h2>
             <div
               id="collapseThree"
-              class="accordion-collapse collapse"
+              className="accordion-collapse collapse"
               data-bs-parent="#accordionExample"
             >
-              <div class="accordion-body">
+              <div className="accordion-body">
                 <p>
                   As your coach I expect complete transparency from your end.
                   You are advised to share daily meal pics and workout videos.
@@ -453,10 +454,10 @@ const Home = () => {
               </div>
             </div>
           </div>
-          <div class="accordion-item">
-            <h2 class="accordion-header">
+          <div className="accordion-item">
+            <h2 className="accordion-header">
               <button
-                class="accordion-button collapsed"
+                className="accordion-button collapsed"
                 type="button"
                 data-bs-toggle="collapse"
                 data-bs-target="#collapseThree"
@@ -468,10 +469,10 @@ const Home = () => {
             </h2>
             <div
               id="collapseThree"
-              class="accordion-collapse collapse"
+              className="accordion-collapse collapse"
               data-bs-parent="#accordionExample"
             >
-              <div class="accordion-body">
+              <div className="accordion-body">
                 <p>
                   No, far from it. I have no formal education background in the
                   field of health and fitness apart from the experience of
@@ -482,10 +483,10 @@ const Home = () => {
               </div>
             </div>
           </div>
-          <div class="accordion-item">
-            <h2 class="accordion-header">
+          <div className="accordion-item">
+            <h2 className="accordion-header">
               <button
-                class="accordion-button collapsed"
+                className="accordion-button collapsed"
                 type="button"
                 data-bs-toggle="collapse"
                 data-bs-target="#collapseThree"
@@ -497,10 +498,10 @@ const Home = () => {
             </h2>
             <div
               id="collapseThree"
-              class="accordion-collapse collapse"
+              className="accordion-collapse collapse"
               data-bs-parent="#accordionExample"
             >
-              <div class="accordion-body">
+              <div className="accordion-body">
                 <p>
                   We will be in direct contact over WhatsApp 24/7. Communication
                   has to be initiated from your end over WhatsApp chat if you
