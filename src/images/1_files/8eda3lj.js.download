@@ -1,0 +1,28 @@
+try { 
+	
+
+
+webengage.onReady(function() {
+    var forever = webengage.state.getForever().uattr;
+    console.log('forever', forever);
+    if (forever) {
+        webengage.screen({
+          "we_email":forever.we_email,
+          "we_region":forever.we_region,
+          "we_city":forever.we_city,
+          "we_phone":forever.we_phone 
+        });
+        console.log({
+           "we_email":forever.we_email,
+          "we_region":forever.we_region,
+          "we_phone":forever.we_phone 
+        });
+     }
+});
+ } catch(e) { 
+ 	if (e instanceof Error) { 
+		var data = e.stack || e.description;
+		data = (data.length > 900 ? data.substring(0, 900) : data);
+	 	webengage.eLog(null, 'error', data, 'cwc-error','cwc', '8eda3lj');
+	 }
+ }
