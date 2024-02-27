@@ -292,7 +292,7 @@ const Home = () => {
               <span></span>6 MONTHS
             </Link>
           </div>
-          <hr className="w-75 m-auto mb-5" />
+          <hr className="w-75 m-auto mb-4" />
           <h4 className="bg-dark text-white m-auto text-center w-25">
             FREQUENTLY ASKED QUESTIONS
           </h4>

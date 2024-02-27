@@ -376,9 +376,10 @@ body {
     width: 100%;
     margin: 0px !important;
   }
-  .client-transformation div:nth-child(1) {
+  .client-transformation div {
     display: block !important;
-    margin: 2px !important;
+    margin: 0px !important;
+    margin-bottom: 30px !important;
   }
 }
 
@@ -457,8 +458,13 @@ body {
     width: 300px !important ;
     margin-bottom: 50px !important;
   }
+  .enrol-plans div:nth-child(1), div:nth-child(2) {
+    margin-left: 15px !important;
+    margin-bottom: 5px !important;
+  }
   .enrol-plans-choice div {
-    margin-left: 50px;
+    margin-left: 50px !important;
+    margin-top: -10px !important;
   }
   .enrol-plans-choice h4 {
     font-size: 1.2rem;
