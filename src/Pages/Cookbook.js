@@ -73,7 +73,7 @@ const Cookbook = () => {
       </section>
 
       <section className="cookbook-purchase-section">
-        <div className="cookbook-purchase-title bg-dark text-white text-uppercase fs-2 w-25 text-center m-auto mb-5">
+        <div className="cookbook-purchase-title bg-dark text-white text-uppercase fs-2 w-50 text-center m-auto mb-5">
           click here to purchase
         </div>
         <div className="cookbook-purchase-btn">
