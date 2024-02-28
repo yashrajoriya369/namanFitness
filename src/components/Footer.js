@@ -2,8 +2,6 @@ import React from "react";
 import { Link } from "react-router-dom";
 import { BsLinkedin, BsGithub, BsYoutube, BsInstagram } from "react-icons/bs";
 import { PiTelegramLogo } from "react-icons/pi";
-import "../App.css";
-import "../index.css";
 
 const Footer = () => {
   return (

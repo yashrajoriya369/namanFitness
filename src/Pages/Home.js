@@ -1,9 +1,7 @@
 import React from "react";
 import { AiFillMessage } from "react-icons/ai";
 import { Link } from "react-router-dom";
-import Blog from "../components/Blog";
-import "../App.css";
-import "../index.css";
+import Blogs from "./Blogs";
 import Marquee from "react-fast-marquee";
 import First from "../images/1.webp";
 import Second from "../images/2.webp";
@@ -16,15 +14,15 @@ import Seven from "../images/7.webp";
 const Home = () => {
   return (
     <>
-      <section className="main_banner">
-        <div className="img_banner text-center text-white mb-5">
+      <section className="first-section">
+        <div className="img-banner text-center text-white mb-5">
           <AiFillMessage className="fs-1 mt-5" />
           <div className="mt-4 fs-2 fw-bold">1-ON-1</div>
           <div className="fs-2 fw-bolder">ONLINE FITNESS COACHING</div>
           <div className="dash text-center"></div>
           <div className="mt-3 fs-5">SWEATWITHNC.IN</div>
         </div>
-        <div className="fs-1 text-center fw-bold main_banner_slogan">
+        <div className="fs-1 text-center fw-bold main-banner-title">
           GET INTO THE BEST SHAPE OF YOUR LIFE
         </div>
         <div className="mt-3 text-center">
@@ -38,12 +36,20 @@ const Home = () => {
         </div>
       </section>
 
-      <section className="">
-        <div className="second_banner_slogan fs-3 w-50 m-auto">
+      <section className="second-section">
+        <div className="second-banner-title fs-2">
           WHAT IS INCLUDED IN COACHING?
         </div>
-        <div>
-          <Blog
+        <div className="d-flex justify-content-center flex-wrap">
+          <Blogs
+            title="DETAILED PERSONALISED NUTRITION"
+            text="A straightforward Indian-style diet plan that is adapted to your preferred eating pattern (vegetarian, non-vegetarian, or vegan). You will also have access to my cookbook, which has more than 40 delicious and incredibly simple recipes."
+          />
+          <Blogs
+            title="DETAILED PERSONALISED NUTRITION"
+            text="A straightforward Indian-style diet plan that is adapted to your preferred eating pattern (vegetarian, non-vegetarian, or vegan). You will also have access to my cookbook, which has more than 40 delicious and incredibly simple recipes."
+          />
+          <Blogs
             title="DETAILED PERSONALISED NUTRITION"
             text="A straightforward Indian-style diet plan that is adapted to your preferred eating pattern (vegetarian, non-vegetarian, or vegan). You will also have access to my cookbook, which has more than 40 delicious and incredibly simple recipes."
           />
@@ -59,96 +65,95 @@ const Home = () => {
         </div>
       </section>
 
-      <section className="third-banner">
+      <section className="third-section">
         <div
-          className="text-center fs-1 text-uppercase fw-bold bg-dark text-white my-5"
-          style={{ width: "40%", margin: "auto" }}
+          className="text-center fs-1 text-uppercase fw-bold bg-dark text-white my-5 third-section-title"
+          style={{ width: "35%", margin: "auto", fontWeight: "800" }}
         >
           Client Transformation
         </div>
-      </section>
-
-      <section className="client-transformation">
-        <div className="container d-flex justify-content-between m-auto">
-          <div className="card">
-            <div className="card-header">
-              <img
-                src="https://s.aolcdn.com/images/dims?client=fh7w6q744eiognjk&signature=d59d0cf6af1d779a3dca451e0ba259c33bbc6115&image_uri=https%3A%2F%2Fs.aolcdn.com%2Fos%2Fab%2F_cms%2F2019%2F08%2F30142658%2F2020-jeep-wrangler-16.jpg&thumbnail=750%2C422&quality=80"
-                alt=""
-              />
-            </div>
-            <div className="card-body">
-              <span className="tag tag-teal">Technology</span>
-              <h4>Why is the Tesla Cybertruck designed the way it is?</h4>
-              <p>
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                Aspernatur tenetur distinctio neque?
-              </p>
-              <div className="user">
+        <div className="client-transformation">
+          <div className="container d-flex justify-content-between flex-wrap m-auto">
+            <div className="card">
+              <div className="card-header">
                 <img
-                  src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcSft5PLhaSb6QUdT0yRu3rjlam1Rt--WDJ6yQ&usqp=CAU"
+                  src="https://s.aolcdn.com/images/dims?client=fh7w6q744eiognjk&signature=d59d0cf6af1d779a3dca451e0ba259c33bbc6115&image_uri=https%3A%2F%2Fs.aolcdn.com%2Fos%2Fab%2F_cms%2F2019%2F08%2F30142658%2F2020-jeep-wrangler-16.jpg&thumbnail=750%2C422&quality=80"
                   alt=""
                 />
-                <div className="user-info">
-                  <h5>Lewis Daniels</h5>
-                  <small>Yesterday</small>
+              </div>
+              <div className="card-body">
+                <span className="tag tag-teal">Technology</span>
+                <h4>Why is the Tesla Cybertruck designed the way it is?</h4>
+                <p>
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                  Aspernatur tenetur distinctio neque?
+                </p>
+                <div className="user">
+                  <img
+                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcSft5PLhaSb6QUdT0yRu3rjlam1Rt--WDJ6yQ&usqp=CAU"
+                    alt=""
+                  />
+                  <div className="user-info">
+                    <h5>Lewis Daniels</h5>
+                    <small>Yesterday</small>
+                  </div>
                 </div>
               </div>
             </div>
-          </div>
-          <div className="card">
-            <div className="card-header">
-              <img
-                src="https://images.cruisecritic.com/image/18740535/10-best-cruise-destinations-for-hot-air-balloon-rides_600x400_21.jpg"
-                alt=""
-              />
-            </div>
-            <div className="card-body">
-              <span className="tag tag-purple">Place</span>
-              <h4>
-                Hot Air Ballooning in Nepal - 1 Day - Nepal Mother House Treks
-              </h4>
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat
-                dolor nihil saepe. Nobis nihil minus similique hic quas
-                mollitia. Error.
-              </p>
-              <div className="user">
+            <div className="card">
+              <div className="card-header">
                 <img
-                  src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcSft5PLhaSb6QUdT0yRu3rjlam1Rt--WDJ6yQ&usqp=CAU"
+                  src="https://images.cruisecritic.com/image/18740535/10-best-cruise-destinations-for-hot-air-balloon-rides_600x400_21.jpg"
                   alt=""
                 />
-                <div className="user-info">
-                  <h5>Lewis Daniels</h5>
-                  <small>Yesterday</small>
+              </div>
+              <div className="card-body">
+                <span className="tag tag-purple">Place</span>
+                <h4>
+                  Hot Air Ballooning in Nepal - 1 Day - Nepal Mother House Treks
+                </h4>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Fugiat dolor nihil saepe. Nobis nihil minus similique hic quas
+                  mollitia. Error.
+                </p>
+                <div className="user">
+                  <img
+                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcSft5PLhaSb6QUdT0yRu3rjlam1Rt--WDJ6yQ&usqp=CAU"
+                    alt=""
+                  />
+                  <div className="user-info">
+                    <h5>Lewis Daniels</h5>
+                    <small>Yesterday</small>
+                  </div>
                 </div>
               </div>
             </div>
-          </div>
-          <div className="card">
-            <div className="card-header">
-              <img
-                src="https://dynaimage.cdn.cnn.com/cnn/q_auto,w_412,c_fill,g_auto,h_232,ar_16:9/http%3A%2F%2Fcdn.cnn.com%2Fcnnnext%2Fdam%2Fassets%2F200305114843-01-edge-hudson-yards-observation-deck.jpg"
-                alt=""
-              />
-            </div>
-            <div className="card-body">
-              <span className="tag tag-pink">Travel</span>
-              <h4>
-                New York City | Layout, People, Economy, Culture, & History
-              </h4>
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Molestias consequuntur sequi suscipit iure fuga ea!
-              </p>
-              <div className="user">
+            <div className="card">
+              <div className="card-header">
                 <img
-                  src="https://3.bp.blogspot.com/--sCpJJGYWEA/W2P4C51CYSI/AAAAAAAAQcI/LR4U_--Wf1E3wz7RLZtmwBPObm_ky9tQQCLcBGAs/s1600/beautiful-indian-women-photos-1.jpg"
+                  src="https://dynaimage.cdn.cnn.com/cnn/q_auto,w_412,c_fill,g_auto,h_232,ar_16:9/http%3A%2F%2Fcdn.cnn.com%2Fcnnnext%2Fdam%2Fassets%2F200305114843-01-edge-hudson-yards-observation-deck.jpg"
                   alt=""
                 />
-                <div className="user-info">
-                  <h5>Carrie Brewer</h5>
-                  <small>23 Dec 2020</small>
+              </div>
+              <div className="card-body">
+                <span className="tag tag-pink">Travel</span>
+                <h4>
+                  New York City | Layout, People, Economy, Culture, & History
+                </h4>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Molestias consequuntur sequi suscipit iure fuga ea!
+                </p>
+                <div className="user">
+                  <img
+                    src="https://3.bp.blogspot.com/--sCpJJGYWEA/W2P4C51CYSI/AAAAAAAAQcI/LR4U_--Wf1E3wz7RLZtmwBPObm_ky9tQQCLcBGAs/s1600/beautiful-indian-women-photos-1.jpg"
+                    alt=""
+                  />
+                  <div className="user-info">
+                    <h5>Carrie Brewer</h5>
+                    <small>23 Dec 2020</small>
+                  </div>
                 </div>
               </div>
             </div>
@@ -156,11 +161,11 @@ const Home = () => {
         </div>
       </section>
 
-      <section className="testimonials">
-        <div className="testimonials-slogan text-uppercase text-center fs-1 bg-dark text-white">
+      <section className="fourth-section testimonials mt-5">
+        <div className="testimonials-title text-uppercase text-center fs-1 bg-dark text-white mx-auto w-25 fw-bold">
           testimonials
         </div>
-        <div className="testimonials-marquee">
+        <div className="testimonials-marquee mb-5">
           <Marquee>
             <img src={First} alt="protein" width="100px" />
             <img src={Second} alt="protein" width="100px" />
@@ -191,8 +196,8 @@ const Home = () => {
         </div>
       </section>
 
-      <section className="sixth-banner">
-        <div className="text-white bg-dark text-center w-50 m-auto fs-1">
+      <section className="fifth-banner">
+        <div className="text-white bg-dark text-center w-50 m-auto fs-1 text-uppercase fw-bold">
           How does coaching work?
         </div>
         <p>
@@ -244,7 +249,7 @@ const Home = () => {
               >
                 3 MONTHS <br /> ₹17,000
               </div>
-              <h4 className="mt-3">MOST POPULAR</h4>
+              <h4>MOST POPULAR</h4>
               <p className="w-50 m-auto">
                 Great place to get started if you want to experiment with online
                 coaching and get trained directly under Mohit Sharma
@@ -264,7 +269,7 @@ const Home = () => {
               >
                 6 MONTHS <br /> ₹30,000
               </div>
-              <h4 className="mt-3">BEST PRICE</h4>
+              <h4 className="mt-1">BEST PRICE</h4>
               <p className="w-50 m-auto">
                 The best choice if you're looking for complete body
                 transformation and guidance in every step of your fitness
@@ -274,9 +279,9 @@ const Home = () => {
           </div>
         </div>
 
-        <section className="enrol-plans-choice">
-          <h3 className="text-center fs-1 fw-bolder m-5">WHICH ONE ?</h3>
-          <div className="mt-3 text-center">
+        <div className="enrol-plans-choice">
+          <h3 className="text-center fs-1 fw-bolder m-4">WHICH ONE ?</h3>
+          <div className="mt-3 text-center plan-choice-button">
             <Link className="animated-button3">
               <span></span>
               <span></span>
@@ -284,7 +289,7 @@ const Home = () => {
               <span></span>3 MONTHS
             </Link>
           </div>
-          <div className="mt-3 text-center">
+          <div className="mt-3 text-center plan-choice-button2">
             <Link className="animated-button3 mb-5">
               <span></span>
               <span></span>
@@ -292,8 +297,8 @@ const Home = () => {
               <span></span>6 MONTHS
             </Link>
           </div>
-          <hr className="w-75 m-auto mb-4" />
-          <h4 className="bg-dark text-white m-auto text-center w-25">
+          <hr className="w-100 m-auto my-5 " />
+          <h4 className="bg-dark text-white text-center fs-2 w-25 m-auto">
             FREQUENTLY ASKED QUESTIONS
           </h4>
           <p>
@@ -303,10 +308,10 @@ const Home = () => {
             </Link>
             if you cannot find an answer to your question.
           </p>
-        </section>
+        </div>
       </section>
 
-      <section className="asked-questions">
+      <section className="sixth-banner asked-questions">
         <div className="accordion" id="accordionExample">
           <div className="accordion-item">
             <h2 className="accordion-header">
