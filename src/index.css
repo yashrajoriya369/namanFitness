@@ -182,19 +182,6 @@
 }
 /* Header CSS Ends Here */
 
-/* .second_banner_slogan {
-    font-size: 24px !important;
-    width: max-content !important;
-    margin-left: 175px !important;
-    font-weight: 400 !important;
-    margin-bottom: 35px !important;
-  } */
-/* .second_banner_slogan {
-    font-size: 18px !important;
-    margin-left: 40px !important;
-  } */
-/* } */
-
 /* FIRST SECTION CSS STARTS HERE */
 .first-section .img-banner {
   width: 100%;
@@ -207,6 +194,24 @@
   width: 100px;
   text-align: center;
   border-bottom: 2px solid white;
+}
+
+@media (max-width: 550px) {
+  .first-section .img-banner {
+    width: 100%;
+    height: 45vh !important;
+  }
+  .first-section .img-banner div:nth-child(2) {
+    margin-bottom: 15px !important;
+  }
+  .first-section .img-banner div:nth-child(3) {
+    margin-top: 0 !important;
+    margin-bottom: 45px !important;
+  }
+  .first-section .img-banner div:nth-child(4) {
+    font-size: medium !important;
+    margin: -30px 5px 0px 5px !important;
+  }
 }
 
 /* ENROL BUTTON CSS STARTS HERE */
@@ -524,7 +529,7 @@ ul {
 .card-body {
   display: flex;
   flex-direction: column;
-  align-items: start;
+  align-items: flex-start;
   padding: 20px;
   min-height: 250px;
 }
@@ -729,3 +734,157 @@ ul {
 /* Footer CSS Ends Here */
 
 /* SIXTH SECTION CSS ENDS HERE */
+
+/* COOKBOOK CSS STARTS HERE */
+/* FIRST SECTION CSS STARTS HERE */
+.cookbook-first-section .img-banner {
+  width: 100%;
+  height: 45vh;
+  background-color: #e1dcc8;
+}
+
+.cookbook-first-section .dash {
+  display: inline-block;
+  width: 100px;
+  text-align: center;
+  border-bottom: 2px solid white;
+}
+
+@media (max-width: 550px) {
+  .cookbook-first-section .img-banner {
+    width: 100%;
+    height: 45vh !important;
+  }
+  .cookbook-first-section .img-banner div:nth-child(3) {
+    margin-top: 0 !important;
+  }
+  .cookbook-first-section .img-banner div:nth-child(4) {
+    font-size: medium !important;
+    margin: -30px 5px 0px 5px !important;
+  }
+}
+
+/* FIRST SECTION CSS ENDS HERE */
+
+/* SECOND SECTION CSS STARTS HERE */
+.cookbook-description {
+  display: flex;
+}
+.cookbook-text {
+  width: 80%;
+  margin: 0px 70px 20px 150px;
+  text-align: justify;
+  font-size: 22px;
+  color: #9b9b9b;
+}
+.cookbook-book img {
+  width: 80%;
+  height: 80%;
+}
+
+@media (max-width: 550px) {
+  .cookbook-second-title {
+    width: 45% !important;
+    border-radius: 5px;
+  }
+  .cookbook-text {
+    color: #9b9b9b;
+    order: 2 !important;
+    width: 100% !important;
+    margin: auto !important;
+    font-size: 0.9rem;
+    padding: 0px 40px;
+    text-align: justify !important;
+  }
+  .cookbook-book {
+    order: 1 !important;
+    width: 100% !important;
+    text-align: center;
+  }
+  .cookbook-description {
+    display: flex !important;
+    flex-direction: column;
+  }
+}
+
+/* SECOND SECTION CSS ENDS HERE */
+
+/* THIRD SECTION CSS STARTS HERE */
+.cookbook-third-section .cookbook-transformation-results {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 2rem;
+}
+.cookbook-transformation-results .before-transformation {
+  margin-right: 5px;
+}
+.cookbook-transformation-results .after-transformation {
+  margin-left: 5px;
+}
+.cookbook-transformation-results .before-transformation img {
+  width: 100%;
+  height: 100%;
+}
+.cookbook-transformation-results .after-transformation img {
+  width: 100%;
+  height: 100%;
+}
+.cookbook-third-section p {
+  font-size: 24px;
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 5rem;
+}
+
+@media (max-width: 550px) {
+  .cookbook-third-section .cookbook-slogan {
+    width: 30% !important;
+    border-radius: 5px;
+  }
+  .cookbook-third-section .cookbook-transformation-results {
+    display: flex;
+    justify-content: center;
+    margin-bottom: -30px;
+  }
+  .cookbook-transformation-results .before-transformation {
+    margin-right: 5px;
+    margin-left: 10px;
+  }
+  .cookbook-transformation-results .after-transformation {
+    margin-left: 5px;
+    margin-right: 10px;
+  }
+  .cookbook-transformation-results .before-transformation img {
+    width: 100%;
+    height: 250px;
+  }
+  .cookbook-transformation-results .after-transformation img {
+    width: 100%;
+    height: 250px;
+  }
+}
+
+/* THIRD SECTION CSS ENDS HERE */
+
+/* FoURTH SECTION CSS STARTS HERE */
+
+.cookbook-purchase-section .cookbook-purchase-btn div:nth-child(1) a {
+  letter-spacing: normal;
+}
+.cookbook-purchase-section .cookbook-purchase-btn div:nth-child(2) a {
+  letter-spacing: normal;
+}
+
+@media (max-width: 550px) {
+  .cookbook-purchase-section .cookbook-purchase-title {
+    width: 85% !important;
+    border-radius: 5px;
+  }
+  .cookbook-purchase-section .cookbook-purchase-btn div:nth-child(2) a {
+    font-size: 1rem;
+  }
+  
+}
+
+/* FoURTH SECTION CSS ENDS HERE */
+/* COOKBOOK CSS ENDS HERE */
