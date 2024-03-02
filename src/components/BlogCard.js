@@ -1,43 +1,22 @@
 import React from "react";
-import Saket from "./saketgokhale.jpg";
 import { Link } from "react-router-dom";
+import Kieani from "../images/kieani.jpeg";
 
-const Blog = (props) => {
-  const { title, text } = props;
+
+const BlogCard = (props) => {
+  const { title, description } = props;
   return (
     <>
       <section id="blog">
         <div className="blog-container">
           <div className="blog-box">
             <div className="blog-img">
-              <img src={Saket} alt="blog" />
+              <img src={Kieani} alt="blog" />
             </div>
             <div className="blog-text">
               <span>18 July / Hypertrophy</span>
               <h5 className="blog-title mt-2">{title}</h5>
-              <p>{text}</p>
-              <Link to="blogs/:id">Read More</Link>
-            </div>
-          </div>
-          <div className="blog-box">
-            <div className="blog-img">
-              <img src={Saket} alt="blog" />
-            </div>
-            <div className="blog-text">
-              <span>18 July / Hypertrophy</span>
-              <h5 className="blog-title mt-2">{title}</h5>
-              <p>{text}</p>
-              <Link to="blogs/:id">Read More</Link>
-            </div>
-          </div>
-          <div className="blog-box">
-            <div className="blog-img">
-              <img src={Saket} alt="blog" />
-            </div>
-            <div className="blog-text">
-              <span>18 July / Hypertrophy</span>
-              <h5 className="blog-title mt-2">{title}</h5>
-              <p>{text}</p>
+              <p>{description}</p>
               <Link to="blogs/:id">Read More</Link>
             </div>
           </div>
@@ -47,4 +26,4 @@ const Blog = (props) => {
   );
 };
 
-export default Blog;
+export default BlogCard;

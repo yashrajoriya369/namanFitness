@@ -40,19 +40,8 @@ const Home = () => {
         <div className="second-banner-title fs-2">
           WHAT IS INCLUDED IN COACHING?
         </div>
-        <div className="d-flex justify-content-center flex-wrap">
-          <Blogs
-            title="DETAILED PERSONALISED NUTRITION"
-            text="A straightforward Indian-style diet plan that is adapted to your preferred eating pattern (vegetarian, non-vegetarian, or vegan). You will also have access to my cookbook, which has more than 40 delicious and incredibly simple recipes."
-          />
-          <Blogs
-            title="DETAILED PERSONALISED NUTRITION"
-            text="A straightforward Indian-style diet plan that is adapted to your preferred eating pattern (vegetarian, non-vegetarian, or vegan). You will also have access to my cookbook, which has more than 40 delicious and incredibly simple recipes."
-          />
-          <Blogs
-            title="DETAILED PERSONALISED NUTRITION"
-            text="A straightforward Indian-style diet plan that is adapted to your preferred eating pattern (vegetarian, non-vegetarian, or vegan). You will also have access to my cookbook, which has more than 40 delicious and incredibly simple recipes."
-          />
+        <div className="d-flex flex-row flex-wrap">
+          <Blogs />
         </div>
         <div className="mt-3 text-center">
           <Link className="animated-button3 mb-5">

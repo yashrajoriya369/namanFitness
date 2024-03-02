@@ -1,26 +1,31 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "../index.css";
-import { Link } from "react-router-dom";
-import Kieani from "../images/kieani.jpeg";
+import { useSelector, useDispatch } from "react-redux";
+import { getAllBlogs } from "../features/blogs/blogSlice";
+import BlogCard from "../components/BlogCard";
 
-const Blog = (props) => {
-  const { title, text } = props;
+const Blog = () => {
+  const blogState = useSelector((state) => state.blog.blog);
+  console.log(blogState);
+  const dispatch = useDispatch();
+  useEffect(() => {
+    getBlogs();
+  }, []);
+
+  const getBlogs = () => {
+    dispatch(getAllBlogs());
+  };
   return (
-    <section id="blog">
-      <div className="blog-container">
-        <div className="blog-box">
-          <div className="blog-img">
-            <img src={Kieani} alt="blog" />
-          </div>
-          <div className="blog-text">
-            <span>18 July / Hypertrophy</span>
-            <h5 className="blog-title mt-2">{title}</h5>
-            <p>{text}</p>
-            <Link to="blogs/:id">Read More</Link>
-          </div>
-        </div>
-      </div>
-    </section>
+    <>
+      {blogState &&
+        blogState?.map((item, index) => {
+          return (
+            <div key={index} className="col-3">
+              <BlogCard title={item?.title} description={item?.description} />
+            </div>
+          );
+        })}
+    </>
   );
 };
 
